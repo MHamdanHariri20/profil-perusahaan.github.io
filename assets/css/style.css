@@ -219,6 +219,7 @@ nav .collapse .btn:hover{
     font-size: 14px;
 }
 
+/* portfolio */
 .portfolio{
     background-color: #131025;
     height: auto;
@@ -280,6 +281,7 @@ nav .collapse .btn:hover{
     border-radius: 10px;
 }
 
+/* footer */
 footer{
     background-color: #ffffff;
     padding: 40px 0 10px 0;
@@ -322,6 +324,7 @@ footer .copyright p{
     margin: 20px 0 10px 0;
 }
 
+/* responsive */
 @media screen and (max-width: 1200px){
 
     .text-highlight .title{
@@ -407,7 +410,7 @@ footer .copyright p{
     }
 
     .card-brand-identity, .card-documentation {
-        width: 50%;
+        width: calc(50% - 20px);
     }
 
     .portfolio{
@@ -426,35 +429,6 @@ footer .copyright p{
         text-align: center;
     }
 }
-
-.image-container {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .image-container img {
-    display: block;
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-  }
-  
-  .text-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 10px;
-    text-align: center;
-    transform: translateY(100%);
-    transition: transform 0.3s;
-  }
-  
-  .image-container:hover .text-overlay {
-    transform: translateY(0%);
-  }
   
 
 @media screen and (max-width: 768px) {
@@ -538,3 +512,33 @@ footer .copyright p{
         font-size: 14px;
     }
 }
+
+/* modal-portfolio */
+.image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+  }
+  
+  .image-container:hover .text-overlay {
+    transform: translateY(0%);
+  }
